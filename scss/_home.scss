@@ -1,0 +1,147 @@
+#posts, #post, #profile-posts {
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+
+    .card {
+        background-color: $color-black;
+        color: white;
+        box-shadow: rgba(245, 239, 239, 0.35) 0px 5px 15px;
+
+        .card-header, .card-footer {
+            background-color: rgb(189 189 189 / 3%);
+        }
+        .card-body {
+            cursor: pointer;
+            img {
+                height: 25rem;
+
+                @media screen and (max-width: 576px) {
+                    height: 15rem;
+                }
+            }
+            h6 {
+                color: $color-white;
+                opacity: .2;
+            }
+            h4 {
+                color: $color-blue;
+            }
+            p {
+                font-weight: 100;
+            }
+        }
+        .card-header {
+            border-bottom: var(--bs-card-border-width) solid rgb(95 95 95 / 18%);   
+            img {
+                width: 2rem;
+                height: 2rem;
+                margin-right: .5rem;
+                object-fit: contain;
+            }
+        }
+        .card-footer {
+            border-top: var(--bs-card-border-width) solid rgb(95 95 95 / 18%);
+        }
+    }
+}
+
+.plus {
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    width: 5rem;
+    height: 5rem;
+    background-color: #0d6efd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: $transition;
+
+    i {
+        font-size: 25px;
+        color: $color-white;
+
+        @media screen and (max-width: 576px) {
+            font-size: 15px;
+        }
+    }
+
+    &:hover {
+        transition: $transition;
+        transform: translateY(-5px);
+    }
+
+        @media screen and (max-width: 576px) {
+            width: 3rem;
+            height: 3rem;
+        }
+}
+
+#success-alert {
+    width: 30%;
+
+    @media screen and (max-width: 991px) {
+        width: 50%;
+    }
+    @media screen and (max-width: 576px) {
+        width: 90%;
+    }
+}
+
+.comments {
+    .comment {
+        padding: .5rem 1rem;
+        img {
+            width: 2rem;
+            height: 2rem;
+            margin-right: .5rem;
+            border-radius: 50%;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        p {
+            color: gray;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    hr {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        border-color: $color-black;
+        width: 100%;
+        margin: .5rem auto 0 auto;
+    }
+}
+
+    .send-comment {
+        padding: .5rem 1rem;
+
+        position: relative;
+        input {
+            height: 48px;
+            width: 100%;
+            padding: 0 5rem 0 1rem;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .send {
+            position: absolute;
+            top: 50%;
+            right: 1%;
+            transform: translateY(-50%);
+        }
+
+        button {
+            padding: .4rem 1rem;
+            margin-right: 1rem;
+        }
+    }

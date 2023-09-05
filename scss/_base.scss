@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, span, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul li {
+    list-style: none;
+}
+ul  {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $color-dark-black;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    z-index: 1055;
+    display: none;
+    width: 30rem;
+    height: auto; 
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+
+    @media screen and (max-width: 576px) {
+        width: 20rem;
+    }
+}
+
+textarea {
+    border-color: transparent;
+    border: 1px solid rgb(230, 227, 227);
+    border-radius: 5px;
+    height: 100px;
+    resize: none;
+    outline: none;
+}
+
+a {
+    &:hover {
+        color: inherit;
+    }
+}
