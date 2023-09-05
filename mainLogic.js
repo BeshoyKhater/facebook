@@ -73,7 +73,7 @@ function getDataFormLocale() {
     const userLocal = JSON.parse(localStorage.getItem("user"))
     document.querySelectorAll("#user-nav").forEach((i) => {
         i.innerHTML = `
-                <img src=${userLocal.profile_image} style="width: 3rem; height: 3rem; object-fit: contain; border-radius: 50%; margin-right: .5rem;"> 
+                <img src=${userLocal.profile_image} style="width: 3rem; height: 3rem; object-fit: cover; border-radius: 50%; margin-right: .5rem;"> 
                 <span style="color: white; font-size: 16px;">${userLocal.name}</span>
             `
     })
